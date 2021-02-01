@@ -21,3 +21,11 @@ for (let i = 0; i < openBtns.length; i++)
 
 closeBtn.addEventListener('click', closeModal)
 overlay.addEventListener('click', closeModal);
+
+//Closing the Modal window by pressing the Escape key
+document.addEventListener('keydown', function (e) {
+
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+})
